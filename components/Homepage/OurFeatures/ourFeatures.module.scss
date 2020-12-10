@@ -1,0 +1,47 @@
+.mainContainer {
+  margin: 30px 0;
+}
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 100%;
+}
+.features > div > h3 {
+  font-size: 18px;
+}
+.features > div > p {
+  font-size: 14px;
+}
+.icon {
+  font-size: 40px!important;
+  color: red;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .features {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .features {
+    max-width: 300px!important;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 20px 0px;
+    height: 50px;
+  }
+  .borderRight:not(:last-child) > div {
+    border-right: 1px solid #A9A9A9;
+  }
+  .borderRight:not(:first-child) > div {
+    padding-left: 20px;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+}

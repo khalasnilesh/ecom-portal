@@ -1,0 +1,146 @@
+.copyright {
+  font-size: 12px;
+  text-align: center;
+}
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.footer-container {
+  background: #252932;
+}
+
+.footerLink-item {
+  cursor: pointer;
+  font-size: 13px;
+  padding: 10px 0px;
+}
+.footerLink-item:hover {
+  color: #D32F2F;
+}
+.footerLink-item-icon {
+  font-size: 30px!important;
+}
+.footerLink-item-contact {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+.footerLink-item-text {
+  font-size: 13px;
+  margin-left: 10px;
+}
+.footerLink-name {
+  color: #D32F2F;
+  font-size: 17px;
+  padding: 40px 0 20px;
+  text-transform: uppercase;
+}
+.footerLink-container {
+  list-style: none;
+}
+.links-container {
+  border-bottom: 1px solid #B7BCC8;
+  color: #B7BCC8;
+  padding-left: 40px;
+  margin-bottom: 50px;
+}
+.footerLink-container:last-child {
+  margin-bottom: 50px;
+}
+.logo-footer {
+  width: 200px;
+}
+.logo-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 40px 30px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social-container {
+  border-bottom: 1px solid #B7BCC8;
+  color: #B7BCC8!important;
+}
+.social-footer-icon {
+  font-size: 40px!important;
+  margin: 0 10px 10px;
+}
+.we-accept {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 40px;
+}
+.we-accept-img {
+  margin: 5px;
+  width: 50px;
+}
+
+@media only screen and (min-width: 500px) {
+  .links-container {
+    padding: 5% 0px 10% 20%;
+  }
+  .detailsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerLink-container {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .detailsContainer {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: row;
+  }
+  .footerLink-container {
+    padding: 0 20px 20px;
+    float: unset;
+    width: auto;
+  }
+  .footerLink-container > div {
+    white-space: nowrap;
+  }
+  .footerLink-item {
+    white-space: nowrap;
+  }
+  .links-container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-container {
+    width: 20%;
+  }
+  .social-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .social-container > div {
+    padding: 0 20px;
+  }
+  .social-footer-icon:hover {
+    cursor: pointer;
+    color: #D32F2F;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footerLink-container {
+    width: 20%;
+  }
+  .logo-footer {
+    width: 300px;
+  }
+  .social-container > div {
+    padding: 0 40px;
+  }
+}

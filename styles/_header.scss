@@ -1,0 +1,232 @@
+
+@keyframes newtag-blink {
+  0% {
+    background: rgb(187, 104, 104);
+  }
+  100% {
+    background: red;
+  }
+}
+
+.cart-container-p {
+  display: none;
+}
+.primaryMenubar-container,
+.primaryMenubar {
+  display: none!important;
+}
+@media only screen and (min-width: 600px) {
+  #stick-point {
+    width: 100%;
+  }
+  .cart-container-dt {
+    cursor: pointer;
+    position: relative;
+  }
+  .cart-container-dt span {
+    display: none;
+    position: absolute;
+    background: red;
+    top: 35px;
+    left: 7px;
+    transform: rotate(45deg);
+    height: 20px;
+    width: 20px;
+    z-index: 2;
+  }
+
+  .cart-icon-popup-dt {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 300px;
+    min-height: 50px;
+    background: #fff;
+    border-width: 6px 0 0 0;
+    border-style: solid;
+    border-color: red;
+    border-radius: 8px 8px 5px 5px;
+    color: #777;
+    box-shadow: 0 2px 8px rgba(0,0,0,.5);
+    margin-top: 10px;
+    z-index: 3;
+  }
+  .cart-container-dt:hover .cart-icon-popup-dt,
+  .cart-container-dt:hover span {
+    display: flex;
+  }
+  .newtag div {
+    position: relative;
+  }
+  .newtag span {
+    height: 5px;
+    width: 5px;
+    animation: newtag-blink 1s linear alternate infinite;
+    position: absolute;
+    left: -2px;
+    bottom: -3px;
+    transform: rotate(45deg);
+  }
+  .newtag {
+    color: #fff;
+    background: red;
+    position: absolute;
+    padding: 1px 3px;
+    font-size: 10px;
+    left: 90%;
+    border-radius: 2px;
+    top: -13px;
+    font-weight: 400;
+    animation: newtag-blink 1s linear alternate infinite;
+  }
+  .newtag-right {
+    left: 105%;
+    top: 0;
+  }
+  
+  .newtag-right span {
+    bottom: 5px;
+    left: -5px;
+  }
+  
+  .level1-name > div,
+  .level2-name > div,
+  .level3-name > div {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    position: relative;
+  }
+  .level3-name:hover {
+    color: #D32F2F;
+  }
+  .level1-name,
+  .level2-name,
+  .level3-name {
+    position: relative;
+    font-size: 10px;
+    color: #414141;
+  }
+  .level3-name {
+    cursor: pointer;
+    padding: 0px 30px 5px 10px;
+    list-style: none;
+    white-space: nowrap;
+  }
+  .level3-name:hover {
+    border-color: #424242;
+  }
+  .level2-name {
+    padding: 5px 30px 5px 10px;
+    color: #9c0000;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .level1-name {
+    padding: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .level1-subMenu-container {
+    position: relative;
+  }
+  .level1-subMenu {
+    background: #fff;
+    -webkit-box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.75);
+    display: flex;
+    list-style: none;
+    position: absolute;
+    padding: 5%;
+    overflow-x: scroll;
+    max-width: 70vw;
+    z-index: 2;
+  }
+
+  .level1-subMenu-hide {
+    display: none;
+  }
+
+  .level2-submenu {
+    list-style: none;
+    width: 100%;
+    overflow-y: scroll;
+  }
+  .level2-container {
+    max-height: 60vh;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+  }
+  .level2-container::-webkit-scrollbar {
+    -webkit-appearance: none!important;
+  }
+  
+  .level2-container::-webkit-scrollbar:vertical {
+    width: 5px;
+  }
+  
+  .level2-container::-webkit-scrollbar:horizontal {
+    height: 5px;
+  }
+  
+  .level2-container::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid #B71C1C; /* should match background, can't be transparent */
+    background-color: #B71C1C;
+  }
+
+  .level1-subMenu-item:not(:last-child) {
+    border-right: 1px dashed #A9A9A9;
+  }
+  
+  .primaryMenubar-container {
+    display: flex!important;
+    // border-bottom: 5px solid #B71C1C;
+    z-index: 2;
+    background: #fff;
+    position: sticky;
+    top: 0px;
+  }
+  .primaryMenubar {
+    display: flex!important;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .primaryMenubar-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .isActive {
+    background: #B71C1C;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #fff;
+    cursor: default;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .level1-name,
+  .level2-name,
+  .level3-name {
+    position: relative;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .level1-name,
+  .level2-name,
+  .level3-name {
+    position: relative;
+    font-size: 14px;
+  }
+}
